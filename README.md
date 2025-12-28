@@ -1,3 +1,31 @@
+Website Task Management adalah sebuah aplikasi berbasis web yang dirancang untuk membantu proses pengelolaan tugas secara terstruktur, efisien, dan terkontrol dalam sebuah tim atau organisasi. Aplikasi ini memungkinkan pengguna untuk membuat, mengatur, memantau, dan memperbarui tugas sesuai dengan peran (role) yang dimiliki.
+
+Website ini dibangun menggunakan Next.js dengan TypeScript sebagai framework utama, Tailwind CSS untuk tampilan antarmuka yang modern dan responsif, serta MySQL (phpMyAdmin) sebagai sistem manajemen basis data. Sistem keamanan dan autentikasi pengguna diterapkan menggunakan NextAuth dengan Credentials Provider, sehingga akses ke dalam sistem hanya dapat dilakukan oleh pengguna yang terdaftar.
+
+🔐 Sistem Role dan Hak Akses
+Website ini menerapkan Role-Based Access Control (RBAC) yang membagi pengguna ke dalam dua peran utama:
+1. Admin
+- Mengelola data pengguna (create, read, update, delete)
+- Membuat, mengubah, menghapus, dan melihat seluruh tugas
+- Menentukan dan mengatur penugasan task kepada user
+- Memantau progres tugas seluruh pengguna
+2. User
+- Melihat daftar tugas yang diberikan kepadanya
+- Memperbarui status tugas (Todo, In Progress, Done)
+- Tidak memiliki akses ke data pengguna lain
+- Tidak dapat menghapus tugas
+
+📌 Fitur Utama
+- Manajemen tugas berbasis role
+- Status tugas (Todo, In Progress, Done)
+- Penentuan deadline tugas
+- Dashboard terpisah antara Admin dan User
+- Sistem login yang aman dengan enkripsi password
+- Validasi dan proteksi akses halaman serta API
+
+🎯 Tujuan Pengembangan
+Website Task Management ini dikembangkan untuk meningkatkan produktivitas kerja, meminimalisir kesalahan dalam pembagian tugas, serta mempermudah monitoring pekerjaan secara real-time. Aplikasi ini cocok digunakan untuk kebutuhan perusahaan, organisasi, tim proyek, maupun tugas akademik.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
